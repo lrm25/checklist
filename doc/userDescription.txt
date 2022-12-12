@@ -1,0 +1,21 @@
+1.  The user manually enters procedures in procedures.json in the same folder as the program.  This file includes:
+    * procedure name
+    * file location
+2.  The user starts the program.  
+3.  The user selects from the available names from the command line.  
+4.  A copy of the procedure is opened in GVIM in the temp folder, with "COPY" specified.
+
+2e1.  procedures.json is missing, or malformed
+1.  Return error and exit
+
+2e2.  procedures.json contains no items
+1.  Return error and exit
+
+3a1.  User selects to just exit instead
+1.  Exit program
+
+3e1.  User selection is invalid or out of bounds
+1.  Return error, and return to loop
+
+4e1.  Unable to open file in temp folder
+1.  Return error and exit

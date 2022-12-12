@@ -1,0 +1,24 @@
+1.  The user manually enters procedures in procedures.json in the same folder as the program.  This file includes:
+    * procedure name
+    * file location
+2.  The user starts the program.
+2.3.  The program checks if the JSON file exists and can be loaded.  If not, an error is returned.
+3.  The program loads the data from the JSON file into a data structure.
+4.  If there is an error, an error is returned
+4.5.  The program adds indices to the unmarshalled elements
+5.  The program prints the elements of the data structure to the command line for the user.
+6.  The user selects from the available names, or selects to exit.
+7.  If the user selects to exit, program exits
+8.  If the user makes an invalid selection, an error is returned, and the loop continues
+9.  If the selection is valid, the program looks for the file in the "location" specified
+10.  If file cannot be found, error is returned
+11.  If file is found, program loads file
+11.3.  If file cannot be loaded, error is returned
+11.5.  Program adds two lines:  "*** COPY ***", and empty line
+11.7.  Program writes to new file in temp folder with trailing date string in file name
+12.  If file cannot be written to temp folder, error is returned
+12.5.  Program attempts to write header to file, specifying COPY
+12.7.  If file cannot be written to, error is returned
+13.  If file is written to, the file is opened with gvim
+14.  If unable to open with gvim, error is returned
+15.  If successfully opened, program exits

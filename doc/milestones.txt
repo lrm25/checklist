@@ -1,0 +1,5 @@
+* 0.7.0 - gvim - open file in temp folder (platform-neutral)
+* 0.7.1 - add readme
+* 0.7.2 - add notepad support
+* 0.7.3 - allow user to select JSON file location
+* 0.7.4 - allow user to add gvim to the JSON file in addition to the path folder
